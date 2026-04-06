@@ -5,7 +5,7 @@ using namespace std;
 
 class Solution {
 public:
-    bool helper(vector<vector<char>>& board, int row, int col, string& word, int index) {
+    bool helper(vector<vector<char> >& board, int row, int col, string& word, int index) {
         int n = board.size();
         int m = board[0].size();
 
@@ -32,7 +32,7 @@ public:
         return found;
     }
 
-    bool exist(vector<vector<char>>& board, string word) {
+    bool exist(vector<vector<char> >& board, string word) {
         int n = board.size();
         int m = board[0].size();
 
@@ -50,7 +50,7 @@ public:
 
 int main(){
     Solution s;
-    vector<vector<char>> board = {
+    vector<vector<char> > board = {
         {'A', 'B', 'C', 'E'},
         {'S', 'F', 'C', 'S'},
         {'A', 'D', 'E', 'E'}
