@@ -10,6 +10,7 @@ public:
             return false;
         }
 
+        // True value case
         if(expval == (n*n)-1){
             return true;
         }
