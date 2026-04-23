@@ -46,6 +46,7 @@ public:
     }
 
     int findTheWinner(int n, int k) {
+        // Calling the helping function
         return winner(n, k) + 1;
     }
 };
