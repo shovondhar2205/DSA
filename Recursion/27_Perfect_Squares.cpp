@@ -15,6 +15,7 @@ public:
         // take current coin (add 1 count)
         int take = 1 + ways(coins, amount - coins[index], index, n);
 
+        // Returning the minimum value
         return min(take, skip);
     }
 
