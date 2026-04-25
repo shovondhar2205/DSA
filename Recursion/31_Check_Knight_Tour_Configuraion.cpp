@@ -29,6 +29,7 @@ public:
     }
 
     bool checkValidGrid(vector<vector<int>>& grid) {
+        // Calling the helping function
         return isValid(grid, 0, 0, grid.size(), 0);
     }
 };
