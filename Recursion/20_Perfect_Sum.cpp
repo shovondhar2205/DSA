@@ -9,6 +9,7 @@ public:
         if(target == 0){
             return 1;
         }
+        
         if(index == n || target < 0){
             return 0;
         }
