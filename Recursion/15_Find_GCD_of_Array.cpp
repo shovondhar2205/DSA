@@ -5,6 +5,7 @@ using namespace std;
 
 class Solution {
 public:
+    // Recursively finding the GCD
     int GCD(int a, int b){
         if(b == 0) return a;
         return GCD(b, a%b);
