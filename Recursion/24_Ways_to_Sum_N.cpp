@@ -5,6 +5,7 @@ using namespace std;
 class Solution {
   public:
     int ways(int arr[], int m, int sum){
+        // Base case
         if(sum == 0) return 1;
         if(sum < 0) return 0;
         
@@ -16,6 +17,7 @@ class Solution {
     }
     
     int countWays(int arr[], int m, int N) {
+        // Calling the helping function
         return ways(arr, m, N);
     }
 };
