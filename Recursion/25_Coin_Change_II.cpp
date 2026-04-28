@@ -6,9 +6,11 @@ class Solution {
 public:
     // Using Recursion
     int ways(vector<int>& coins, int amount, int index, int n){
+        // Base case
         if(amount == 0) return 1;
         if(index == n || amount < 0) return 0;
 
+        // Taking the decisions to include or exclude
         return ways(coins, amount, index+1, n) + ways(coins, amount-coins[index], index, n);
     }
 
