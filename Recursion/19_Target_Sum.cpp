@@ -15,6 +15,7 @@ public:
     }
 
     int findTargetSumWays(vector<int>& nums, int target) {
+        // Calling the helping function
         return find(nums, 0, nums.size(), target);
     }
 };
