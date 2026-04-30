@@ -25,6 +25,7 @@ public:
         int ans7 = isValid(grid, r-1, c-2, n, expval+1);
         int ans8 = isValid(grid, r-2, c-1, n, expval+1);
 
+        // Returning any of the true value answer
         return ans1 || ans2 || ans3 || ans4 || ans5 || ans6 || ans7 || ans8;
     }
 
