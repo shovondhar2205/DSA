@@ -28,6 +28,7 @@ class Solution {
     vector<string> NBitBinary(int n) {
         vector<string> ans;
         string temp;
+        // Calling the helping function
         help(n, ans, temp, 0, 0);
         reverse(ans.begin(), ans.end());
         return ans;
