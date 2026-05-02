@@ -11,6 +11,7 @@ class Solution {
         
         int count = 0;
         for(int i=0; i<m; i++){
+            // Counting the total ways
             count += ways(arr, m, sum-arr[i]);
         }
         return count;
