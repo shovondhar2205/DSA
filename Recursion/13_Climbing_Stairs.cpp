@@ -6,6 +6,7 @@ class Solution {
 public:
     // Using Brute Force approach
     int climbStairs(int n) {
+        // Base case
         if(n <= 2) return n;
         
         int prev1 = 2;
